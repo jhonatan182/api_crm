@@ -31,7 +31,7 @@ const Formulario = ({cliente}) => {
             let respuesta;
 
             if(cliente.id) {
-                const url = `http://localhost:4000/clientes/${cliente.id}`;
+                const url = `${import.meta.env.VITE_SOME_KEY}/${cliente.id}`;
 
                 respuesta = await fetch(url, {
                     method: 'PUT',
@@ -44,7 +44,7 @@ const Formulario = ({cliente}) => {
 
             } else {
 
-                const url = 'http://localhost:4000/clientes';
+                const url = import.meta.env.VITE_SOME_KEY;
                 respuesta = await fetch(url , {
                     method: 'POST',
                     body: JSON.stringify(values),

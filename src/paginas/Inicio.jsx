@@ -13,7 +13,7 @@ const Inicio = () => {
 
             try {
 
-                const url = 'http://localhost:4000/clientes';
+                const url = import.meta.env.VITE_SOME_KEY;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json();
 
@@ -40,7 +40,7 @@ const Inicio = () => {
 
             try {
                 
-                const url = `http://localhost:4000/clientes/${id}`;
+                const url = `${import.meta.env.VITE_SOME_KEY}/${id}`;
                 const respuesta = await fetch(url , {
                     method: 'DELETE'
                 });
