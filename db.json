@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "nombre": "Andrea",
+      "empresa": "Papeleria",
+      "email": "andrea@andrea.com",
+      "telefono": "12341232",
+      "notas": "Cotizando papel sticker",
+      "id": 3
+    }
+  ]
+}
