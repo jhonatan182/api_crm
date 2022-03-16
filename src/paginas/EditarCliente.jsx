@@ -12,7 +12,7 @@ const EditarCliente = () => {
     useEffect(() => {
         const obtenerClienteAPI = async () => {
             try {
-                const url = `${import.meta.env.VITE_SOME_KEY}/${id}`;
+                const url = `${import.meta.env.VITE_SOME_URL}/${id}`;
 
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json();

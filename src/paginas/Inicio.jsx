@@ -13,7 +13,7 @@ const Inicio = () => {
 
             try {
 
-                const url = import.meta.env.VITE_SOME_KEY;
+                const url = import.meta.env.VITE_SOME_URL;
                 const respuesta = await fetch(url);
                 const resultado = await respuesta.json();
 
@@ -40,7 +40,7 @@ const Inicio = () => {
 
             try {
                 
-                const url = `${import.meta.env.VITE_SOME_KEY}/${id}`;
+                const url = `${import.meta.env.VITE_SOME_URL}/${id}`;
                 const respuesta = await fetch(url , {
                     method: 'DELETE'
                 });
